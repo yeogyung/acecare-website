@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이스 재가복지센터 | 전주 방문요양·복지용구</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="에이스재가복지센터"></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">홈</a></li>
+                    <li><a href="service.html">서비스 안내</a></li>
+                    <li><a href="equipment.html">복지용구</a></li>
+                    <li><a href="info.html">정보마당</a></li>
+                    <li><a href="about.html">센터소개</a></li>
+                    <li><a href="contact.html" class="btn-primary" style="color:white; padding: 8px 20px; font-size:15px;">상담문의</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <span class="tel-main">063-237-4378</span>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="hero bg-pattern">
+        <img src="images/hero.jpg" class="hero-bg" alt="배경" onerror="this.src='https://via.placeholder.com/1920x800/F5E6D3/333333?text=Hero+Image'">
+        <div class="container hero-content">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center;">
+                <span class="sub-title" style="margin: 0;">사랑과 정성으로 모시는</span>
+                <img src="images/logo.png" alt="에이스재가복지센터" style="height: 40px; width: auto; object-fit: contain;">
+            </div>
+
+            <h1>내 부모님처럼,<br>한결같은 마음으로 동행하겠습니다.</h1>
+            
+            <div class="hero-phone">
+                <p>365일 친절 상담</p>
+                <a href="tel:063-237-4378">063-237-4378</a>
+            </div>
+
+            <p class="desc">전주 전지역 방문요양 · 방문목욕 · 복지용구<br>어르신의 편안한 노후, 에이스가 책임집니다.</p>
+            
+            <div class="hero-btns">
+                <a href="info.html" class="btn btn-primary">등급신청 무료상담</a>
+                <a href="http://pf.kakao.com/_bnxdAX/chat" target="_blank" class="btn btn-navy"><i class="fas fa-comment"></i> 카카오톡 상담</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="target-section">
+        <div class="container">
+            <h2 class="section-title">이런 분들께 <span>에이스</span>가 필요합니다</h2>
+            <div class="grid-4">
+                <div class="card-icon"><i class="fas fa-user-clock"></i><h3>노인성 질환</h3><p>치매, 뇌졸중, 파킨슨 등<br>전문 케어가 필요한 분</p></div>
+                <div class="card-icon"><i class="fas fa-wheelchair"></i><h3>거동 불편</h3><p>혼자서 식사, 이동 등<br>일상생활이 어려운 분</p></div>
+                <div class="card-icon"><i class="fas fa-home"></i><h3>독거 어르신</h3><p>홀로 계셔 말벗과<br>가사 도움이 필요한 분</p></div>
+                <div class="card-icon"><i class="fas fa-file-medical"></i><h3>등급 외 어르신</h3><p>장기요양등급 신청이<br>막막하신 분</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section bg-beige bg-pattern">
+        <div class="container">
+            <h2 class="section-title">에이스의 <span>핵심 서비스</span></h2>
+            <div class="grid-3">
+                <div class="card-image">
+                    <div class="img-box"><img src="images/care.jpg" alt="방문요양"></div>
+                    <div class="txt-box"><h3>방문요양</h3><p>전문 요양보호사가 댁으로 방문하여 신체활동 및 가사를 지원합니다.</p><a href="service.html" class="link-more">자세히 보기 &rarr;</a></div>
+                </div>
+                <div class="card-image">
+                    <div class="img-box"><img src="images/bath.jpg" alt="방문목욕"></div>
+                    <div class="txt-box"><h3>방문목욕</h3><p>목욕 차량과 전문 인력이 방문하여 안전하고 개운한 목욕을 돕습니다.</p><a href="service.html" class="link-more">자세히 보기 &rarr;</a></div>
+                </div>
+                <div class="card-image">
+                    <span class="badge-a">평가 최우수 A등급</span>
+                    <div class="img-box"><img src="images/item.jpg" alt="복지용구"></div>
+                    <div class="txt-box"><h3>의료복지용구</h3><p>연 160만원 한도 내에서 휠체어, 침대 등을 지원받을 수 있습니다.</p><a href="equipment.html" class="link-more">자세히 보기 &rarr;</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="container" id="location" style="padding: 60px 20px;">
+        <h2 class="section-title">찾아오시는 <span>길</span></h2>
+        <a href="https://naver.me/xLsML6Nb" target="_blank" style="display:block; width:100%; min-height:400px; background:#f0f0f0; border-radius:20px; overflow:hidden; box-shadow:0 10px 20px rgba(0,0,0,0.1); margin-bottom:20px; text-decoration:none;">
+            <img src="images/map.jpg" alt="지도보기" style="width:100%; height:auto; display:block;" 
+                 onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'height:400px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#666; font-size:18px; background:#eee;\'><i class=\'fas fa-map-marked-alt fa-3x\' style=\'margin-bottom:15px; color:#ccc;\'></i>지도 이미지를 등록해주세요 (images/map.jpg)<br><span style=\'font-size:14px; margin-top:10px;\'>클릭하면 네이버 지도로 이동합니다</span></div>'">
+        </a>
+        <p style="text-align:center; font-size:16px; color:#555;">
+            <i class="fas fa-mouse-pointer"></i> 지도를 클릭하시면 <b>네이버 지도</b>로 바로 연결됩니다.
+        </p>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <a href="index.html" class="footer-logo">에이스 재가복지센터</a>
+                <div class="footer-info">
+                    <p>대표: 양금주 | 사업자등록번호: 325-80-02501</p>
+                    <p>전화: 063-237-4378 | Mobile: 010-6444-5183</p>
+                    <p>주소: 전라북도 전주시 완산구 거마평로 228-1, 2층</p>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2025 ACE Home Care Center.</div>
+        </div>
+    </footer>
+
+    <div class="floating-btns">
+        <a href="http://pf.kakao.com/_bnxdAX/chat" target="_blank" class="float-btn kakao"><i class="fas fa-comment"></i></a>
+        <a href="tel:010-6444-5183" class="float-btn phone"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
